@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Gustavo Honorio</title>
+ <link rel="stylesheet" href="css/style.css" />
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+  <style>
+    /* Estilo da animação pulsante */
+    #icon-sound.pulsando {
+      animation: pulseSound 1.5s infinite;
+    }
+
+    @keyframes pulseSound {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.2); opacity: 0.8; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Áudio de fundo -->
+  <audio id="bg-music" loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-dreams.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <!-- Botão de ativar/desativar música -->
+ <button id="toggle-music" aria-label="Play/Pause Música" aria-pressed="true" class="audio-btn">
+    <svg id="icon-sound" xmlns="http://www.w3.org/2000/svg" fill="#00bcd4" width="28" height="28" viewBox="0 0 24 24">
+      <path d="M3 10v4h4l5 5V5l-5 5H3zm13.5 2c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.74 2.5-2.26 2.5-4.02z"/>
+    </svg>
+  </button>
+
+  <!-- Cabeçalho -->
+  <header>
+    <img src="assets/fotoperfil.jpeg" alt="Foto de perfil de Gustavo" class="foto-perfil" />
+    <h1 id="typing-title" class="typing-animation"></h1>
+
+<h1 class="fade-in">
+  Desenvolvedor Front-End Júnior | HTML, CSS, JavaScript e React.
+</h1>
+
+
+
+  </header>
+
+<section id="objetivo" class="fade-in" style="transition-delay: 0.1s;">
+  <h2>🎯 Objetivo</h2>
+  <p>Conseguir minha primeira vaga como desenvolvedor front-end júnior remoto até o final de 2025.</p>
+</section>
+
+ <section id="sobre" class="fade-in">
+  <h2>👨‍💻 Sobre Mim</h2>
+  <p>Olá! Eu sou o Gustavo Honorio, desenvolvedor front-end com foco em HTML, CSS, JavaScript e React. Estou em constante evolução, buscando sempre aplicar boas práticas e entregar experiências digitais de qualidade com um toque humano e profissional.</p>
+</section>
+
+<section id="habilidades" class="fade-in" style="transition-delay: 0.3s;">
+  <h2>🛠️ Habilidades</h2>
+  <ul>
+    <li>HTML5 (concluído - Curso em Vídeo)</li>
+    <li>CSS3 (concluído - Curso em Vídeo)</li>
+    <li>JavaScript (concluído - Curso em Vídeo)</li>
+    <li>React (em aprendizado)</li>
+    <li>Criação de páginas responsivas</li>
+    <li>Conhecimento básico de Git e GitHub</li>
+    <li>Estudo diário com foco em front-end</li>
+  </ul>
+</section>
+
+<section id="formacao" class="fade-in" style="transition-delay: 0.2s;">
+  <h2>🎓 Formação</h2>
+  <p>Tecnólogo em TI EAD - UNIFEMM <strong>(Concluido)</strong></p>
+  <p>Ensino Superior em Administração EAD – FACNOPAR (2º ano)</p>
+   <p>
+  Cursos de HTML, CSS e JavaScript com Gustavo Guanabara <strong>(Concluído)</strong><br>
+  Certificados serão emitidos ao final dos módulos.
+</p>
+
+</section>
+
+
+
+
+  <!-- Botões de redes sociais -->
+  <section class="botoes-redes">
+    <a href="https://www.linkedin.com/in/gustavohrdev" target="_blank">
+      <img src="assets/linkedin.png" alt="LinkedIn" />
+    </a>
+    <a href="https://github.com/GustavoHRdev" target="_blank">
+      <img src="assets/github.png" alt="GitHub" />
+    </a>
+    <a href="https://wa.me/5543999644819" target="_blank">
+      <img src="assets/whatsapp.png" alt="WhatsApp" />
+    </a>
+  </section>
+ 
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate");
+          observer.unobserve(entry.target); // opcional: remove observação após animação
+        }
+      });
+    }, {
+      threshold: 0.1 // começa a animar quando 10% do elemento aparece
+    });
+
+    document.querySelectorAll('.fade-in, .zoom-in').forEach(el => observer.observe(el));
+  });
+  
+</script>
+
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const music = document.getElementById('bg-music');
+    const btn = document.getElementById('toggle-music');
+    const icon = document.getElementById('icon-sound');
+
+    const soundOn = `<path d="M3 10v4h4l5 5V5l-5 5H3zm13.5 2c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.74 2.5-2.26 2.5-4.02z"/>`;
+    const soundOff = `<path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.74 2.5-2.26 2.5-4.02zM3 10v4h4l5 5V5l-5 5H3z"/>`;
+
+    btn.addEventListener('click', () => {
+      if (music.paused) {
+        music.play();
+        icon.innerHTML = soundOn;
+        icon.classList.add('pulsando');
+      } else {
+        music.pause();
+        icon.innerHTML = soundOff;
+        icon.classList.remove('pulsando');
+      }
+    });
+
+    if (!music.paused) {
+      icon.classList.add('pulsando');
+    }
+
+    // Animação de digitação
+    const title = "Olá! Eu sou o Gustavo Honorio.";
+    const titleEl = document.getElementById("typing-title");
+    let index = 0;
+
+    function typeTitle() {
+      if (index < title.length) {
+        titleEl.textContent += title.charAt(index);
+        index++;
+        setTimeout(typeTitle, 50);
+      }
+    }
+
+    typeTitle();
+
+    // Animação de scroll (para elementos com a classe 'reveal')
+    const reveals = document.querySelectorAll('.reveal');
+
+    function revealOnScroll() {
+      const windowHeight = window.innerHeight;
+      reveals.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        if (elementTop < windowHeight - 100) {
+          el.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  });
+</script>
+
+</body>
+</html>

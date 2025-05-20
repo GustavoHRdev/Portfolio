@@ -11,7 +11,8 @@ It introduces who I am, my goals, and will soon feature even more projects.
 ---
 
 ## 🌐 Acesse aqui | Check it out here:  
-🔗 [Ver Portfólio](https://gustavohrdev.github.io/Portfolio/) / [View Portfolio](https://gustavohrdev.github.io/Portfolio/)
+🔗 [Ver Portfólio / View Portfolio](https://gustavohrdev.github.io/Portfolio/)
+
 
 ---
 

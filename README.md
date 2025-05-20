@@ -10,37 +10,34 @@ It introduces who I am, my goals, and will soon feature even more projects.
 
 ---
 
-## 🌐 Acesse aqui | Check it out here:
-🔗 [Ver Portfólio / View Portfolio](https://gustavohrdev.github.io/Portfolio/)
+## 🌐 Acesse aqui | Check it out here:  
+🔗 [Ver Portfólio](https://gustavohrdev.github.io/Portfolio/) / [View Portfolio](https://gustavohrdev.github.io/Portfolio/)
 
 ---
 
-## 🛠️ Tecnologias utilizadas | Technologies used:
-
+## 🛠️ Tecnologias utilizadas | Technologies used:  
 - HTML5  
 - CSS3  
 - JavaScript
 
 ---
 
-## 📬 Contato | Contact:
-
+## 📬 Contato | Contact:  
 - 💼 [LinkedIn](https://www.linkedin.com/in/gustavohrdev)  
 - 💬 [WhatsApp](https://wa.me/5543996448129?text=Ol%C3%A1%2C+vim+pelo+seu+portf%C3%B3lio%21)  
 - 💻 [GitHub](https://github.com/GustavoHRdev)  
 
 ---
 
-## ✨ Feedback
+## ✨ Feedback  
 Feedbacks são sempre bem-vindos! 😄  
 Feedback is always welcome! 😄
 
 ---
 
-## 🧠 Sobre mim | About me
-
+## 🧠 Sobre mim | About me  
 Sou um entusiasta do front-end em busca da minha primeira oportunidade como desenvolvedor júnior.  
-Atualmente estou focado em melhorar meu portfólio, aprender continuamente e construir projetos reais.  
+Atualmente estou focado em melhorar meu portfólio, aprender continuamente e construir projetos reais.
 
 I'm a front-end enthusiast looking for my first opportunity as a junior developer.  
 Currently focused on improving my portfolio, learning continuously, and building real-world projects.
